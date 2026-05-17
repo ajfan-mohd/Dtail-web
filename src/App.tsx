@@ -420,15 +420,16 @@ const HomePage = ({
       {/* HERO */}
       <section className="relative pt-24 pb-14 px-6 md:px-14 min-h-[90vh] md:min-h-[95vh] flex flex-col justify-center border-b border-white/10">
         <div className="container mx-auto">
-          <h1
-            style={{ letterSpacing: '0.05em', fontFamily: 'Inter, sans-serif' }}
-            className="text-[17vw] md:text-[13vw] leading-[0.88] md:leading-[0.8] font-extrabold tracking-tighter break-words z-10 relative uppercase"
-          >
-            DREAM<br />
-            <span className="text-stroke text-stroke-hover transition-all duration-500 cursor-default">DESIGN</span>
-            <br />
-            DEFINE<span className="text-brand">.</span>
-          </h1>
+         <h1
+  className="text-[18vw] md:text-[11vw] leading-[0.92] md:leading-[0.9] font-black tracking-[-0.01em] break-words z-10 relative uppercase pt-6 md:pt-8 max-w-[90vw]"
+>
+  DREAM<br />
+  <span className="text-stroke text-stroke-hover transition-all duration-500 cursor-default">
+    DESIGN
+  </span>
+  <br />
+  DEFINE<span className="text-brand">.</span>
+</h1>
           <div className="mt-8 md:mt-32 flex flex-col md:flex-row md:items-end justify-between gap-5 md:gap-12">
             <p className="text-sm md:text-3xl max-w-2xl font-light leading-relaxed text-gray-400">
               We are a creative agency obsessed with the{' '}
@@ -473,7 +474,7 @@ const HomePage = ({
 
       {/* WORK */}
       <section className="py-12 md:py-32 px-5 md:px-12 bg-dark" id="work">
-        <div className="container mx-auto">
+       <div className="container mx-auto flex items-center min-h-[70vh]">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-32 border-b border-white/20 pb-6 md:pb-12">
             <h2 className="text-4xl md:text-[10vw] leading-[0.9] md:leading-[0.8] font-display font-extrabold uppercase">
               Explore<br />
