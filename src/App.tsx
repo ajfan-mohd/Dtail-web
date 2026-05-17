@@ -474,7 +474,7 @@ const HomePage = ({
 
       {/* WORK */}
       <section className="py-12 md:py-32 px-5 md:px-12 bg-dark" id="work">
-       <div className="container mx-auto flex items-center min-h-[70vh]">
+      <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-32 border-b border-white/20 pb-6 md:pb-12">
             <h2 className="text-4xl md:text-[10vw] leading-[0.9] md:leading-[0.8] font-display font-extrabold uppercase">
               Explore<br />
