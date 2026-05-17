@@ -1,0 +1,1 @@
+export const logoUrl = "/assets/dtail-logo.png";
