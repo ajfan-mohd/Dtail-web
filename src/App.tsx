@@ -513,20 +513,39 @@ const HomePage = ({
       </section>
 
       {/* CLIENTS */}
-      <section className="py-14 md:py-32 border-t border-white/10 bg-dark relative z-10 overflow-hidden">
-        <div className="container mx-auto px-5 md:px-12 mb-8 md:mb-20">
-          <h2 className="text-3xl md:text-7xl font-display font-black uppercase">Selected Partners</h2>
-        </div>
-        <div className="relative w-full flex overflow-hidden group">
-          <div className="flex animate-marquee whitespace-nowrap">
-            {clients.concat(clients).map((client, index) => (
-              <div key={index} className="w-36 h-16 md:w-80 md:h-40 flex-shrink-0 flex items-center justify-center mx-5 md:mx-8">
-                <img src={client.logo} alt={client.name} className="max-h-full max-w-full object-contain grayscale invert opacity-50 hover:opacity-100 transition-all" />
-              </div>
-            ))}
+     {/* ── CLIENTS ── */}
+<section className="py-14 md:py-32 border-t border-white/10 bg-dark relative z-10 overflow-hidden">
+  <div className="container mx-auto px-5 md:px-12 mb-8 md:mb-20">
+    <h2 className="text-3xl md:text-7xl font-display font-black uppercase">
+      Selected Partners
+    </h2>
+  </div>
+
+  {clients.length === 0 ? (
+    <div className="px-5 md:px-12">
+      <p className="text-gray-500 text-sm md:text-base">
+        No clients added yet.
+      </p>
+    </div>
+  ) : (
+    <div className="relative w-full flex overflow-hidden group">
+      <div className="flex animate-marquee whitespace-nowrap">
+        {clients.concat(clients).map((client, index) => (
+          <div
+            key={index}
+            className="w-36 h-16 md:w-80 md:h-40 flex-shrink-0 flex items-center justify-center mx-5 md:mx-8"
+          >
+            <img
+              src={client.logo}
+              alt={client.name}
+              className="max-h-full max-w-full object-contain opacity-80 hover:opacity-100 transition-all"
+            />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  )}
+</section>
 
       <Footer />
     </div>
